@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.fontSize": 15,
+    "editor.detectIndentation": false,
+    // "editor.renderWhitespace": "boundary"
+    // "editor.minimap.enabled": false
+}

@@ -1,0 +1,45 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Parasite",
+            "program": "${workspaceFolder}\\bin\\www.js",
+        }
+    ]
+}
+
+// 作者：Jarhf
+// 链接：https: //www.zhihu.com/question/39255979/answer/88043744
+// 来源：知乎
+// 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name":"Parasite",
+//             "type":"node",
+//             "request": "launch",
+//             "program": "${workspaceFolder}\\bin\\www.js",
+//             "stopOnEntry": false,
+//             "args": [
+                
+//             ],
+//             "cwd": "${workspaceFolder}",
+//             "runtimeExecutable": null,
+//             "runtimeArgs": [
+//                 "--nolazy"
+//             ],
+//             "env": {
+//                 "NODE_ENV":"development"
+//             }
+//         }
+//     ],
+//     "compounds": []
+// }
