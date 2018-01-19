@@ -103,33 +103,4 @@ function readAWrite(res, rootUrl, cb) {
     });
 }
 
-function spliders(url, cb) {
-    var data = [];
-    var html = "";
-    https.get(url, function (res) {
-        res.setEncoding("utf-8");
-        res.on('data', function (chunk) {
-            html += chunk;
-        });
-        res.on("end", function () {
-            var $ = cheerio.load(html);
-            var title = $("div .bookname h1").text().trim();
-            var afterUrl = rootUrl + $(".bottem1 #pager_next").attr("href");
-            var content = $("#content").text().trim();
-            data[i] = {
-                title: title,
-                content: content,
-                afterUrl: afterUrl,
-            };
-            if (i <= 2) {
-                spliders(data[i].afterUrl, cb);
-            } else {
-                cb(data);
-            }
-            console.log(i);
-            i++;
-        })
-    });
-};
-
 //测试url http://www.2952.cc/b/58/58088/14915121.html
